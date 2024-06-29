@@ -1,0 +1,30 @@
+.box {
+    /* liner-gradient */
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    background-image: linear-gradient(red, blue);
+    background-image: linear-gradient(to bottom, red, blue, green);
+    background-image: linear-gradient(to right, aqua, blue, green);
+    background-image: linear-gradient(to bottom right, aqua, blue, green);
+    background-image: linear-gradient(90deg, aqua, blue, green);
+    background-image: linear-gradient(orange, white, green);
+
+
+}
+
+.box1 {
+    /* radial-gradient */
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+
+    background-image: radial-gradient(white, black 70%);
+    background-image: radial-gradient(red, blue, green, aqua 50%, yellow 70%);
+
+
+    background-image: conic-gradient(red, yellow, green);
+    background-image: repeating-conic-gradient(orange, white, green,);
+}

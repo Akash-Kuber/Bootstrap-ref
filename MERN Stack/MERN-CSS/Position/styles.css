@@ -1,0 +1,68 @@
+body{
+
+    width: 800px;
+    height: 1000px;
+   
+    background-color: bisque;
+    
+}
+
+
+
+div{
+    height: 120px;
+    width: 120px;
+    border: 2px solid black;
+    background-color: aqua;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+#div1{
+
+   
+    /* position: inline-block; */
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#div2{
+
+   
+    /* Uses ancestor/parent border for positioning */
+    /* Generally it uses border of body tag if ancestor/parent
+     position is static */
+
+    /* position: absolute;
+    top: 50px;
+    left: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#div3{
+
+   
+    /* position: relative;
+    top: 50px;
+    left: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#div4{
+
+    /* position: sticky;
+    top: 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

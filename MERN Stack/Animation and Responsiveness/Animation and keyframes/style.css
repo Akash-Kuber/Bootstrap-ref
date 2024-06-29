@@ -1,0 +1,71 @@
+.container{
+    height: 203px;
+    width: 50%;
+    border: 1px solid red;
+    background-color: yellow;
+    /* border-radius: 200%; */
+}
+
+.box{
+
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    
+    
+    animation-name: akash;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-timing-function: ease; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-direction: alternate-reverse; */
+
+    /* Animation will stop at the end */
+    animation-fill-mode: forwards;
+
+    /* Animation will stop at start */
+    animation-fill-mode: backwards;
+    animation-fill-mode: both;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@keyframes akash {
+    0%{
+        width: 200px;
+        background-color: orange;
+    }
+
+
+    50%{
+        width: 50%;
+        background-color: white;
+    }
+
+
+    100%{
+        width: 100%;
+        background-color: green;
+    }
+}
+
+/* @keyframes akash {
+    
+    from{
+        width: 200px;
+    }
+
+    to{
+        width: 100%;
+    }
+
+} */

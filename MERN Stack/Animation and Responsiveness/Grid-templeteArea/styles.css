@@ -1,0 +1,43 @@
+.container {
+    height: 1000px;
+    background-color: yellow;
+    border: 2px solid black;
+    display: grid;
+    /* grid-template-columns: 400px;
+    grid-template-rows: 50px 200px 300px 50px;
+
+    grid-template-areas: "hdd" "sidee" "mainn" "ftt"; */
+
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 30px 500px 100px;
+
+    grid-template-areas: 
+    "hdd hdd" 
+    "sidee mainn"
+    "ftt ftt";  
+
+}
+
+.box {
+    /* height: 100px;
+    width: 100px; */
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#hd{
+   grid-area: ftt; 
+}
+
+#side{
+    grid-area: mainn;
+}
+
+#main{
+    grid-area: sidee;
+}
+
+#ft{
+    grid-area: hdd;
+}
+

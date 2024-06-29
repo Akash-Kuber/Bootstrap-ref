@@ -1,0 +1,22 @@
+html{
+    /* to accessible for all classes and ide's */
+    /* Universal Variable */
+    --dark-red:#981a2c; 
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    border: 1px solid green;
+    background-color: yellow;
+    background-color: var(--dark-red);
+}
+
+
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+    /* Local Variable */
+    --dark-red:#981a2c;
+    color: var(--dark-red);
+}

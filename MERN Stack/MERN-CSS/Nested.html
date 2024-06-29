@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nes {
+
+            background-color: aqua;
+            border-radius: 20px;
+            border: 2px;
+            height: 500px;
+            width: 600px;
+
+            @media screen and (min-width:600px) {
+
+                /* (&) represent the nesting */
+                & {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+          
+                    
+                }
+            }
+
+
+            @media screen and (max-width:1200px){
+                background-color: yellow;
+                border-radius: 30px;
+                
+                &{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+
+        }
+            .nes-1 {
+                background-color: green;
+                border-radius: 20px;
+                border: 2px;
+                height: 200px;
+                width: 300px;
+                margin-right: 8px;
+
+                &:hover {
+
+                    background-color: blueviolet;
+                }
+            }
+
+            .nes-2 {
+                background-color: red;
+                border-radius: 20px;
+                border: 2px;
+                height: 150px;
+                width: 200px;
+
+                &:hover {
+
+                    background-color: yellowgreen;
+                }
+            }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="nes">
+        <div class="nes-1" id="nest-1">abcd</div>
+        <div class="nes-2" id="nest-2">pqrs</div>
+    </div>
+</body>
+
+</html>
